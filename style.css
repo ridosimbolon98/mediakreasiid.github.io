@@ -1,0 +1,164 @@
+
+/* Mediakreasi.id content */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font {
+    font-size: 1.5rem;
+}
+
+/* Mediakreasi.id content */
+.text {
+    text-align: center;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/* OR */
+
+.div {
+    display: grid;
+    place-items: center;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+	transition: background 0.3s ease-in-out 0.2s;
+    background: linear-gradient(90deg, #4392DA, #DAD443, #DF77B4, #28AD87, #4392DA);
+	background-size: 400%;
+    z-index: 1;
+	animation: cantik 8s linear infinite;
+}
+
+.container {
+	margin: 3vh auto;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 70%;
+    background: #000;
+    box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.9);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+#content {
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+p {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    color: rgb(200, 201, 221);
+    line-height: 2rem;
+}
+
+.dis {
+    display: none;
+}
+
+.btn {
+	margin-bottom:40px;
+    height: 2.6rem;
+    padding: 10px;
+    width: 18rem;
+    font-size: 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 2px solid linear-gradient(90deg, #03a9f4, #4825b9, #ffeb3b, #03a9f4);
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    outline: none;
+    transition: all 0.3s ease-in-out 0.2s;
+}
+
+.btn:hover {
+    transition: all 0.3s ease-in-out 0.2s;
+    background: linear-gradient(90deg, #03a9f4, #4825b9, #d39f27, #03a9f4);
+    background-size: 400%;
+    z-index: 1;
+    animation: cantik 8s linear infinite;
+    border: none;
+}
+
+.kue {
+	width: 30%;
+}
+
+.foto .gambar {
+	width: 300px;
+	margin-top:40px;
+	border-radius: 50%;
+}
+
+@keyframes cantik {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+	.container {
+		margin: 20px auto;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.card {
+		height: 100%;
+		width: 100%;
+		padding: 10px;
+	}
+	
+	#content {
+		padding: 10px;
+		margin-bottom: 20px;
+		font-size: 2rem;
+		color: rgb(255, 255, 255);
+		text-align: center;
+	}
+	
+	.kue {
+		width: 40%;
+	}
+	
+	.foto .gambar {
+		width: 200px;
+		border-radius: 50%;
+	}
+
+}
